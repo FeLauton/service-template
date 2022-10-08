@@ -1,6 +1,8 @@
 import type { HeadFC } from "gatsby";
 import * as React from "react";
 import "remixicon/fonts/remixicon.css";
+import Footer from "../components/Footer";
+import Main from "../components/Main";
 import "../styles/main.scss";
 
 const IndexPage = () => {
@@ -33,7 +35,6 @@ const IndexPage = () => {
 
   return (
     <>
-      {/* <!--==================== HEADER ====================--> */}
       <header className="header" id="header">
         <nav className="nav container">
           <a href="#" className="nav_logo">
@@ -91,33 +92,8 @@ const IndexPage = () => {
           </div>
         </nav>
       </header>
-
-      {/* <!--==================== MAIN ====================--> */}
-      <main className="main">
-        {/* <!--==================== HOME ====================--> */}
-        <section className="home section" id="home"></section>
-
-        {/* <!--==================== SKILLS ====================--> */}
-        <section className="skills section" id="skills"></section>
-
-        {/* <!--==================== QUALIFICATION ====================--> */}
-        <section className="qualification section" id="qualification"></section>
-
-        {/* <!--==================== SERVICES ====================--> */}
-        <section className="services section" id="services"></section>
-
-        {/* <!--==================== PROJECTS ====================--> */}
-        <section className="projects section" id="projects"></section>
-
-        {/* <!--==================== TESTIMONIAL ====================--> */}
-        <section className="testimonial section"></section>
-
-        {/* <!--==================== CONTACT ====================--> */}
-        <section className="contact section" id="contact"></section>
-      </main>
-
-      {/* <!--==================== FOOTER ====================--> */}
-      <footer className="footer"></footer>
+      <Main />
+      <Footer />
     </>
   );
 };
