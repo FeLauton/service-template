@@ -28,6 +28,14 @@ const config: GatsbyConfig = {
         bucketName: "service-template-fellipe-lauton",
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
   ],
 };
 

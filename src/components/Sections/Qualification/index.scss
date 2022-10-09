@@ -1,0 +1,54 @@
+@import "../../../assets/styles/variables";
+
+.qualification {
+  position: relative;
+}
+
+.qualification__container {
+  row-gap: 3.5rem;
+}
+
+.qualification__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: $small-font-size;
+  font-weight: $font-semi-bold;
+  margin-bottom: 2rem;
+}
+
+.qualification__title i {
+  font-size: 1rem;
+  font-weight: initial;
+}
+
+.qualification__info {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.qualification__name {
+  font-size: $normal-font-size;
+  margin-bottom: 1.25rem;
+}
+
+.qualification__country,
+.qualification__year {
+  display: block;
+  font-size: $small-font-size;
+  color: $text-color-light;
+}
+
+.qualification__country {
+  margin-bottom: 0.75rem;
+}
+
+.qualification__img {
+  width: 150px;
+  position: absolute;
+  right: -3rem;
+  bottom: 12rem;
+  transform: rotate(15deg);
+  opacity: 0.1;
+}
