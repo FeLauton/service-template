@@ -1,5 +1,7 @@
-import * as React from "react";
-import perfilImg from "../../../assets/images/perfil.png";
+import shapeCircle from "../../../images/shape-circle.svg";
+import shapeWaves from "../../../images/shape-waves.svg";
+import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 import "./index.scss";
 
 const Home = () => {
@@ -14,18 +16,14 @@ const Home = () => {
           </h1>
           <div className="home__blob grid">
             <div className="home__perfil">
-              <img src={perfilImg} alt="home perfil" className="" />
+              <StaticImage
+                src="../../../images/perfil.png"
+                alt="home perfil"
+                className=""
+              />
             </div>
-            <img
-              src="src/images/shape-wawes.svg"
-              alt=""
-              className="home__shape-wawes"
-            />
-            <img
-              src="src/images/shape-circle.svg"
-              alt=""
-              className="home__shape-circle"
-            />
+            <img src={shapeWaves} alt="" className="home__shape-waves" />
+            <img src={shapeCircle} alt="" className="home__shape-circle" />
           </div>
           <ul className="home__social">
             <a

@@ -1,10 +1,22 @@
-import * as React from "react";
-import cssIcon from "../../../assets/images/cssIcon.svg";
-import gitIcon from "../../../assets/images/gitIcon.svg";
-import htmlIcon from "../../../assets/images/htmlIcon.svg";
-import javascriptIcon from "../../../assets/images/javascriptIcon.svg";
-import reactIcon from "../../../assets/images/reactIcon.svg";
+import SkillCard from "./SkillCard";
+import React from "react";
 import "./index.scss";
+import {
+  awsEc2Icon,
+  awsIcon,
+  awsLambdaIcon,
+  awsRdsIcon,
+  awsRoute53Icon,
+  cssIcon,
+  gitIcon,
+  htmlIcon,
+  javascriptIcon,
+  nodejsIcon,
+  reactIcon,
+  socketIoIcon,
+  sqlIcon,
+  typescriptIcon,
+} from "../../../images";
 
 const Skills = () => {
   return (
@@ -17,41 +29,20 @@ const Skills = () => {
             <i className="ri-braces-line"></i>Frontend Developer
           </h3>
           <div className="skills__info">
-            <div className="skills__data">
-              <div className="skills__blob">
-                <img src={htmlIcon} alt="skills image" />
-              </div>
-              <h3 className="skills__name">HTML</h3>
-              <span className="skills__subtitle">Intermediate</span>
-            </div>
-            <div className="skills__data">
-              <div className="skills__blob">
-                <img src={cssIcon} alt="skills image" />
-              </div>
-              <h3 className="skills__name">CSS</h3>
-              <span className="skills__subtitle">Intermediate</span>
-            </div>
-            <div className="skills__data">
-              <div className="skills__blob">
-                <img src={javascriptIcon} alt="skills image" />
-              </div>
-              <h3 className="skills__name">Javascript</h3>
-              <span className="skills__subtitle">Intermediate</span>
-            </div>
-            <div className="skills__data">
-              <div className="skills__blob">
-                <img src={reactIcon} alt="skills image" />
-              </div>
-              <h3 className="skills__name">React</h3>
-              <span className="skills__subtitle">Advanced</span>
-            </div>
-            <div className="skills__data">
-              <div className="skills__blob">
-                <img src={gitIcon} alt="skills image" />
-              </div>
-              <h3 className="skills__name">Git</h3>
-              <span className="skills__subtitle">Intermediate</span>
-            </div>
+            <SkillCard title="HTML" subtitle="Intermediate" icon={htmlIcon} />
+            <SkillCard title="CSS" subtitle="Intermediate" icon={cssIcon} />
+            <SkillCard
+              title="Javascript"
+              subtitle="Intermediate"
+              icon={javascriptIcon}
+            />
+            <SkillCard
+              title="Typescript"
+              subtitle="Intermediate"
+              icon={typescriptIcon}
+            />
+            <SkillCard title="React" subtitle="Advanced" icon={reactIcon} />
+            <SkillCard title="Git" subtitle="Intermediate" icon={gitIcon} />
           </div>
         </div>
         <div className="skills__content">
@@ -59,13 +50,45 @@ const Skills = () => {
             <i className="ri-braces-line"></i>Backend Developer
           </h3>
           <div className="skills__info">
-            <div className="skills__data">
-              <div className="skills__blob">
-                <img src="" alt="skills image" />
-              </div>
-              <h3 className="skills__name"></h3>
-              <span className="skills__subtitle"></span>
-            </div>
+            <SkillCard
+              title="NodeJS"
+              subtitle="Intermediate"
+              icon={nodejsIcon}
+            />
+            <SkillCard
+              title="Socket.IO"
+              subtitle="Intermediate"
+              icon={socketIoIcon}
+            />
+            <SkillCard title="SQL Server" subtitle="Advanced" icon={sqlIcon} />
+          </div>
+        </div>
+        <div className="skills__content">
+          <h3 className="skills__title">
+            <i className="ri-cloud-line"></i>Cloud
+          </h3>
+          <div className="skills__info">
+            <SkillCard title="AWS" subtitle="Intermediate" icon={awsIcon} />
+            <SkillCard
+              title="AWS EC2"
+              subtitle="Intermediate"
+              icon={awsEc2Icon}
+            />
+            <SkillCard
+              title="AWS RDS"
+              subtitle="Intermediate"
+              icon={awsRdsIcon}
+            />
+            <SkillCard
+              title="AWS Route 53"
+              subtitle="Intermediate"
+              icon={awsRoute53Icon}
+            />
+            <SkillCard
+              title="AWS Lambda"
+              subtitle="Intermediate"
+              icon={awsLambdaIcon}
+            />
           </div>
         </div>
       </div>

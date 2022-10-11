@@ -1,22 +1,21 @@
-import type { HeadFC } from "gatsby";
 import * as React from "react";
-import Contact from "../Sections/Contact";
 import Home from "../Sections/Home";
-import Projects from "../Sections/Projects";
+import Skills from "../Sections/Skills";
 import Qualification from "../Sections/Qualification";
 import Services from "../Sections/Services";
-import Skills from "../Sections/Skills";
+import Projects from "../Sections/Projects";
 import Testimonial from "../Sections/Testimonial";
-import "./index.scss";
+import Contact from "../Sections/Contact";
+import "./styles.scss";
 
 const Main = () => {
   return (
-    <main className="main">
+    <main>
       <Home />
       <Skills />
       <Qualification />
-      <Projects />
       <Services />
+      <Projects />
       <Testimonial />
       <Contact />
     </main>
@@ -24,5 +23,3 @@ const Main = () => {
 };
 
 export default Main;
-
-export const Head: HeadFC = () => <title>Fellipe Lauton</title>;

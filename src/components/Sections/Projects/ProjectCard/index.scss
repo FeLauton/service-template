@@ -1,0 +1,43 @@
+@import "../../../../assets/styles/variables";
+
+.project__card {
+  display: grid;
+  justify-content: center;
+
+  .project__img {
+    width: 250px;
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .project__card__info {
+    .project__subtitle {
+      font-size: $small-font-size;
+      color: $text-color-light;
+    }
+
+    .project__title {
+      font-size: $h2-font-size;
+      margin-bottom: 1.25rem;
+      margin: 0.5rem 0 1.25rem;
+    }
+
+    .project__button {
+      display: inline-flex;
+      align-items: center;
+      column-gap: 0.5rem;
+      color: $title-color;
+      font-size: $small-font-size;
+
+      i {
+        font-size: 1rem;
+        transition: transform 0.3s;
+      }
+    }
+
+    .project__button:hover {
+      i {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../../../assets/styles/variables";
+
+.skill__data {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+
+  .skill__blob {
+    display: grid;
+    width: 80px;
+    height: 100px;
+    border-radius: 3rem;
+    place-items: center;
+    margin-bottom: 1rem;
+    background-color: $container-color;
+  }
+
+  .skill__blob img {
+    width: 40px;
+  }
+
+  .skill__blob:hover img {
+    animation: bounce-skill 0.6s;
+  }
+
+  @keyframes bounce-skill {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translate(0);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+    80% {
+      transform: translate(0);
+    }
+  }
+
+  .skill__name {
+    font-size: $small-font-size;
+    margin-bottom: 0.25rem;
+  }
+
+  .skill__subtitle {
+    font-size: $tiny-font-size;
+    margin-bottom: 0.25rem;
+  }
+}

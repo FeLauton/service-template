@@ -1,4 +1,6 @@
+src/gatsby-types.d.ts
+package-lock.json
 node_modules/
+.dot.env
 .cache/
 public
-src/gatsby-types.d.ts

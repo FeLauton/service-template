@@ -1,5 +1,5 @@
 import * as React from "react";
-import shapeCircle from "../../../assets/images/shape-circle.svg";
+import shapeCircle from "../../../images/shape-circle.svg";
 import "./index.scss";
 
 const Qualification = () => {

@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/variables";
+
+.testimonial__content {
+  text-align: center;
+}
+
+.testimonial__description {
+  font-family: $title-font;
+  color: $title-color;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__name {
+  font-family: $body-font;
+  font-size: $small-font-size;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial__subtitle {
+  font-size: $smaller-font-size;
+  color: $text-color-light;
+}
+
+.testimonial__img {
+  width: 70px;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 5rem;
+  right: 0rem;
+  opacity: 0.1;
+}
